@@ -3,9 +3,9 @@
 angular.module("mainModule")
     .controller("MainController", [
         "$scope",
-        "$route",
         "$location",
-        function ($scope, $route, $location) {
+        "$route",
+        function ($scope, $location, $route) {
             $scope.$route = $route;
 
             $scope.go = function (url) {
